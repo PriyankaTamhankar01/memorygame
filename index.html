@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+   
+    <header>
+      <h1>PokeMatch</h1>
+      <button onclick="resetGame()">Reset</button>
+      <div id="moves">Moves: 0</div>
+      <div id="score">Score: 0</div>
+    </header>
+   
+    
+    <div id="game">
+      
+    </div>
+
+    <div id="popup" class="hidden">
+      <div id="popup-content">
+        <h2>Game Over!</h2>
+        <p>Score: <span id="final-score"></span></p>
+        <p>Moves: <span id="final-moves"></span></p>
+        <button onclick="resetGame()">Play Again</button>
+      </div>
+    </div>
+    
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
